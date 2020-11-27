@@ -3,6 +3,10 @@
     margin: 0 auto;
 }
 
+#title2-tribute, #tribute-info{
+    text-align: center;
+}
+
 #textarea{
     width: 50%;
 }
