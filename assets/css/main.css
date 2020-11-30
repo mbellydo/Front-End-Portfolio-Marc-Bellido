@@ -7,17 +7,7 @@
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 */
 
-html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
-pre, a, abbr, acronym, address, big, cite,
-code, del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var, b,
-u, i, center, dl, dt, dd, ol, ul, li, fieldset,
-form, label, legend, table, caption, tbody,
-tfoot, thead, tr, th, td, article, aside,
-canvas, details, embed, figure, figcaption,
-footer, header, hgroup, navbar, nav, output, ruby,
-section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, #navbar, nav, output, ruby, section, summary, time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -26,8 +16,7 @@ section, summary, time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, navbar, nav, section {
+article, aside, details, figcaption, figure, footer, header, hgroup, #navbar, nav, section {
 	display: block;
 }
 
@@ -1619,9 +1608,6 @@ hr.major {
 		}
 
 		.icon.style2 {
-			-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
-			-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, border-color 0.2s ease-in-out;
 			background-color: transparent;
 			border: solid 1px #c9c9c9;
@@ -2089,18 +2075,8 @@ input[type="radio"] + label:before {
 
 /* Button */
 
-	input[type="submit"],
-	input[type="reset"],
-	input[type="button"],
-	button,
-	.button {
-		-moz-appearance: none;
-		-webkit-appearance: none;
-		-ms-appearance: none;
+	input[type="submit"], input[type="reset"], input[type="button"], button, .button {
 		appearance: none;
-		-moz-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		-webkit-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-		-ms-transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
 		background-color: transparent;
 		border-radius: 4px;
@@ -2123,90 +2099,46 @@ input[type="radio"] + label:before {
 		white-space: nowrap;
 	}
 
-		input[type="submit"].icon:before,
-		input[type="reset"].icon:before,
-		input[type="button"].icon:before,
-		button.icon:before,
-		.button.icon:before {
+		input[type="submit"].icon:before, input[type="reset"].icon:before, input[type="button"].icon:before, button.icon:before, .button.icon:before {
 			margin-right: 0.5em;
 		}
 
-		input[type="submit"].fit,
-		input[type="reset"].fit,
-		input[type="button"].fit,
-		button.fit,
-		.button.fit {
+		input[type="submit"].fit, input[type="reset"].fit, input[type="button"].fit, button.fit, .button.fit {
 			width: 100%;
 		}
 
-		input[type="submit"]:hover,
-		input[type="reset"]:hover,
-		input[type="button"]:hover,
-		button:hover,
-		.button:hover {
+		input[type="submit"]:hover, input[type="reset"]:hover, input[type="button"]:hover, button:hover, .button:hover {
 			color: #7ecaf6 !important;
 			box-shadow: inset 0 0 0 2px #7ecaf6;
 		}
 
-		input[type="submit"]:active,
-		input[type="reset"]:active,
-		input[type="button"]:active,
-		button:active,
-		.button:active {
+		input[type="submit"]:active, input[type="reset"]:active, input[type="button"]:active, button:active, .button:active {
 			background-color: rgba(242, 132, 158, 0.1);
 		}
 
-		input[type="submit"].small,
-		input[type="reset"].small,
-		input[type="button"].small,
-		button.small,
-		.button.small {
+		input[type="submit"].small, input[type="reset"].small, input[type="button"].small, button.small, .button.small {
 			font-size: 0.6em;
 		}
 
-		input[type="submit"].large,
-		input[type="reset"].large,
-		input[type="button"].large,
-		button.large,
-		.button.large {
+		input[type="submit"].large, input[type="reset"].large, input[type="button"].large, button.large, .button.large {
 			font-size: 1em;
 		}
 
-		input[type="submit"].primary,
-		input[type="reset"].primary,
-		input[type="button"].primary,
-		button.primary,
-		.button.primary {
+		input[type="submit"].primary, input[type="reset"].primary, input[type="button"].primary, button.primary, .button.primary {
 			box-shadow: none;
 			background-color: #585858;
 			color: #ffffff !important;
 		}
 
-			input[type="submit"].primary:hover,
-			input[type="reset"].primary:hover,
-			input[type="button"].primary:hover,
-			button.primary:hover,
-			.button.primary:hover {
+			input[type="submit"].primary:hover, input[type="reset"].primary:hover, input[type="button"].primary:hover, button.primary:hover, .button.primary:hover {
 				background-color: #7ecaf6;
 			}
 
-			input[type="submit"].primary:active,
-			input[type="reset"].primary:active,
-			input[type="button"].primary:active,
-			button.primary:active,
-			.button.primary:active {
+			input[type="submit"].primary:active, input[type="reset"].primary:active, input[type="button"].primary:active, button.primary:active, .button.primary:active {
 				background-color: #ee5f81;
 			}
 
-		input[type="submit"].disabled, input[type="submit"]:disabled,
-		input[type="reset"].disabled,
-		input[type="reset"]:disabled,
-		input[type="button"].disabled,
-		input[type="button"]:disabled,
-		button.disabled,
-		button:disabled,
-		.button.disabled,
-		.button:disabled {
+		input[type="submit"].disabled, input[type="submit"]:disabled, input[type="reset"].disabled, input[type="reset"]:disabled, input[type="button"].disabled, input[type="button"]:disabled, button.disabled, button:disabled, .button.disabled, .button:disabled {
 			pointer-events: none;
 			opacity: 0.25;
 		}
@@ -2214,22 +2146,13 @@ input[type="radio"] + label:before {
 /* Projects */
 
 	.projects {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
 		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
 		flex-wrap: wrap;
 		position: relative;
 		margin: -2.5em 0 0 -2.5em;
 	}
 
 		.projects article {
-			-moz-transition: -moz-transform 0.5s ease, opacity 0.5s ease;
-			-webkit-transition: -webkit-transform 0.5s ease, opacity 0.5s ease;
-			-ms-transition: -ms-transform 0.5s ease, opacity 0.5s ease;
 			transition: transform 0.5s ease, opacity 0.5s ease;
 			position: relative;
 			width: calc(33.33333% - 2.5em);
@@ -2237,9 +2160,6 @@ input[type="radio"] + label:before {
 		}
 
 			.projects article > .image {
-				-moz-transition: -moz-transform 0.5s ease;
-				-webkit-transition: -webkit-transform 0.5s ease;
-				-ms-transition: -ms-transform 0.5s ease;
 				transition: transform 0.5s ease;
 				position: relative;
 				display: block;
@@ -2255,9 +2175,6 @@ input[type="radio"] + label:before {
 
 				.projects article > .image:before {
 					pointer-events: none;
-					-moz-transition: background-color 0.5s ease, opacity 0.5s ease;
-					-webkit-transition: background-color 0.5s ease, opacity 0.5s ease;
-					-ms-transition: background-color 0.5s ease, opacity 0.5s ease;
 					transition: background-color 0.5s ease, opacity 0.5s ease;
 					content: '';
 					display: block;
@@ -2273,9 +2190,6 @@ input[type="radio"] + label:before {
 
 				.projects article > .image:after {
 					pointer-events: none;
-					-moz-transition: opacity 0.5s ease;
-					-webkit-transition: opacity 0.5s ease;
-					-ms-transition: opacity 0.5s ease;
 					transition: opacity 0.5s ease;
 					content: '';
 					display: block;
@@ -2293,25 +2207,10 @@ input[type="radio"] + label:before {
 				}
 
 			.projects article > a {
-				display: -moz-flex;
-				display: -webkit-flex;
-				display: -ms-flex;
 				display: flex;
-				-moz-flex-direction: column;
-				-webkit-flex-direction: column;
-				-ms-flex-direction: column;
 				flex-direction: column;
-				-moz-align-items: center;
-				-webkit-align-items: center;
-				-ms-align-items: center;
 				align-items: center;
-				-moz-justify-content: center;
-				-webkit-justify-content: center;
-				-ms-justify-content: center;
 				justify-content: center;
-				-moz-transition: background-color 0.5s ease, -moz-transform 0.5s ease;
-				-webkit-transition: background-color 0.5s ease, -webkit-transform 0.5s ease;
-				-ms-transition: background-color 0.5s ease, -ms-transform 0.5s ease;
 				transition: background-color 0.5s ease, transform 0.5s ease;
 				position: absolute;
 				top: 0;
@@ -2340,9 +2239,6 @@ input[type="radio"] + label:before {
 				}
 
 				.projects article > a .content {
-					-moz-transition: max-height 0.5s ease, opacity 0.5s ease;
-					-webkit-transition: max-height 0.5s ease, opacity 0.5s ease;
-					-ms-transition: max-height 0.5s ease, opacity 0.5s ease;
 					transition: max-height 0.5s ease, opacity 0.5s ease;
 					width: 100%;
 					max-height: 0;
@@ -2380,9 +2276,6 @@ input[type="radio"] + label:before {
 			}
 
 			body:not(.is-touch) .projects article:hover > .image {
-				-moz-transform: scale(1.1);
-				-webkit-transform: scale(1.1);
-				-ms-transform: scale(1.1);
 				transform: scale(1.1);
 			}
 
@@ -2405,9 +2298,6 @@ input[type="radio"] + label:before {
 		}
 
 		body.is-preload .projects article {
-			-moz-transform: scale(0.9);
-			-webkit-transform: scale(0.9);
-			-ms-transform: scale(0.9);
 			transform: scale(0.9);
 			opacity: 0;
 		}
@@ -2455,9 +2345,6 @@ input[type="radio"] + label:before {
 				}
 
 					.projects article:hover > .image {
-						-moz-transform: scale(1.0);
-						-webkit-transform: scale(1.0);
-						-ms-transform: scale(1.0);
 						transform: scale(1.0);
 					}
 

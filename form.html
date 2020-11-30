@@ -12,11 +12,29 @@
 		<meta name="description" content="Form Web of Marc Bellido">
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		
-		<link rel="icon" href="/img/favicon.png" type="image/gif" sizes="16x16">
+		<link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
 
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="stylesheet" href="/assets/css/custom.css">
+		<link rel="stylesheet" href="assets/css/custom.css">
+
+		<script src="https://smtpjs.com/v3/smtp.js"></script>  
+		<script type="text/javascript">
+			function sendEmail() {
+				Email.send({
+					Host: "smtp.gmail.com",
+					Username : "mbellydo@gmail.com",
+					Password : "test2",
+					To : 'mbellydo@gmail.com',
+					From : "mbellydo@gmail.com",
+					Subject : "Subject",
+					Body : "Body",
+				})
+				.then(function(message){
+					alert("mail sent successfully")
+				});
+			}
+		</script>
 	</head>
 
 	<body class="is-preload">
@@ -59,23 +77,22 @@
 			<div id="main">
 				<div class="inner">
 					<h1 id="title">Form</h1>
-					<!--<span class="image main"><img src="images/pic13.jpg" alt=""/></span>-->
 					<p id="description">Fill this form to get in touch:</p>
 							
-					<form action="">
+					<form method="post">
 						<p>
 							<label for="name" id="name-label">Name:*</label>
-							<input type="text" id="name" name="name" value="name" required>
+							<input type="text" id="name" name="name" placeholder="name" required>
 						</p>
 								
 						<p>
 							<label for="email" id="email-label">Email:*</label>
-							<input type="text" id="email" name="email" value="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+							<input type="text" id="email" name="email" placeholder="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
 						</p>
 
 						<p>
 							<label for="number" id="number-label">Phone:*</label>
-							<input type="text" id="number" name="number" value="phone" pattern="[0-9]{9}" required min="9" max="9">
+							<input type="text" id="number" name="number" placeholder="phone" pattern="[0-9]{9}" required min="9" max="9">
 						</p>
 							
 						<p>
@@ -114,9 +131,14 @@
 							<label for="reason">Additional comments:</label>
 							<textarea id="textarea" name="message" placeholder="Other comments"></textarea>
 						</p>
-
+						
 						<p>
-							<input type="submit" id="submit">
+							<input type="checkbox" data-required="1" name="terminos" id="terminos" value="" required>
+							<label for="terminos"> <span class="span-terminos">Acepto la <a target="_blank" href="#" class="enlace-terminos">política de privacidad</a>.</span>
+						</p>
+						
+						<p>
+							<input type="submit" id="submit" onclick="sendEmail()">
 							<input type="reset">
 						</p>
 					</form>
