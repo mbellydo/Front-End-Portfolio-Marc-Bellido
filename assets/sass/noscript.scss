@@ -12,12 +12,11 @@
 */
 
 /* projects */
-
-	.projects {
-		body.is-preload & {
-			article {
-				@include vendor('transform', 'none');
-				opacity: 1;
-			}
+.projects {
+	body.is-preload & {
+		article {
+			@include vendor('transform', 'none');
+			opacity: 1;
 		}
 	}
+}
